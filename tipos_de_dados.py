@@ -1,0 +1,5 @@
+variavel = input('Digite algo: ')
+print('É alfabética? {}'.format(variavel.isalpha()))
+print('É numérica? {}'.format(variavel.isnumeric()))
+print('É alfanumérica? {}'.format(variavel.isalnum()))
+print('É caixa-baixa? {}'.format(variavel.islower()))
