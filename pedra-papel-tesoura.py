@@ -27,6 +27,9 @@ while resposta == 'sim':
         
     computador = random.choice(['pedra', 'papel', 'tesoura'])
     
+    print('Computador está escolhendo...')
+    sleep(2)
+    
     resultado = ''
     if player == computador:
         resultado = '{}Deu empate!{}'.format(YELLOW, RESET)
