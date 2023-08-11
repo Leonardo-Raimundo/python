@@ -6,49 +6,49 @@ nome = input('Digite seu nome: ')
 print('É um prazer te conhecer, {}!'.format(nome))
 
 # Tipos primitivos de dados
-num = int(input('Insira um número interio: '))
-num = float(input('Insira um número com ponto flutuante: '))
-num = str(input('Insira um nome: '))
+numero_natural = int(input('Insira um número interio: '))
+num_virgula = float(input('Insira um número com ponto flutuante: '))
+nome = str(input('Insira um nome: '))
 # Não existe variável char, toda variável com um caracter é do tipo string
 
 # Tipos primitivos e utilização de funções na saída.
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite um número: '))
-soma = n1 + n2
+primeiro_numero = int(input('Digite um número: '))
+segundo_numero = int(input('Digite um número: '))
+soma = primeiro_numero + segundo_numero
 # As chaves substituem as variáveis que estiverem dentro da função format(), na ordem em que estiverem lá
 # Precisa separar por vírgula cada variável
-print('A soma de {} e {} é igual a: {}'.format(n1, n2, soma))
+print('A soma de {} e {} é igual a: {}'.format(primeiro_numero, segundo_numero, soma))
 
 # Buscando informações em uma variável, com funções que retornam True ou False
-var = input('Digite algo: ')
+variavel = input('Digite algo: ')
 #Verifica se a variável tem algo armazenado, e se são apenas letras, se esse for o caso, retorna True. Caso contrário, False
-print('É alfabética? {}'.format(var.isalpha())) 
+print('É alfabética? {}'.format(variavel.isalpha())) 
 
 # Verifica se a variável tem algo armazenado, e se são apenas número, se esse for o caso, retorna True. Caso contrário, False
-print('É numérica? {}'.format(var.isnumeric()))
+print('É numérica? {}'.format(variavel.isnumeric()))
 
 # Possui números e letras ao mesmo tempo? (Não parece estar funcionando 100%)
-print('É alfanumérica? {}'.format(var.isalnum()))
+print('É alfanumérica? {}'.format(variavel.isalnum()))
 
 # O conteúdo da variável é composto por letras minúsculas?
-print('É caixa-baixa? {}'.format(var.islower()))
+print('É caixa-baixa? {}'.format(variavel.islower()))
 
 # O conteúdo da variável é composto por letras maiúsculas?
-print('É caixa-alta {}'.format(var.isupper()))
+print('É caixa-alta {}'.format(variavel.isupper()))
 
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite um número: '))
-media = (n1 + n2) /2
+primeiro_numero = int(input('Digite um número: '))
+segundo_numero = int(input('Digite um número: '))
+media = (primeiro_numero + segundo_numero) /2
 
-print('A média de {} e {} é igual a: {}'.format(n1, n2, media))
+print('A média de {} e {} é igual a: {}'.format(primeiro_numero, segundo_numero, media))
 
 # ou
 
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite um número: '))
+primeiro_numero = int(input('Digite um número: '))
+segundo_numero = int(input('Digite um número: '))
 
 # Pode-se fazer operações diretamente na saída, a operação fica separada das demais variáveis por vírgula também.
-print('A soma de {} e {} é igual a: {}'.format(n1, n2, (n1+n2)/2))
+print('A soma de {} e {} é igual a: {}'.format(primeiro_numero, segundo_numero, (primeiro_numero + segundo_numero) / 2))
 # o python entende que o que será impresso no terceiro par de {} vai ser o resultado da operação (n1+n2)/2
 '''
 --------------------------
